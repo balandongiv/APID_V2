@@ -34,7 +34,11 @@
   bookmarksopen=true,
   bookmarksnumbered=true,
   pdfstartview=FitH,
-  hidelinks
+  colorlinks=false,
+  linkbordercolor=red,
+  citebordercolor=red,
+  urlbordercolor=red,
+  pdfborder={0 0 1}
 ]{hyperref}
 \RequirePackage{titlesec}
 \RequirePackage{graphicx}
