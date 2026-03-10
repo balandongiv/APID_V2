@@ -1,0 +1,160 @@
+\chapter{Product Specifications}
+
+\section{Session Overview}
+
+In Session 7, your group translated customer statements into interpreted needs. This session turns those needs into \textbf{product specifications}: measurable targets that guide engineering decisions, benchmarking, and later concept evaluation.
+
+By the end of this session, you should be able to:
+\begin{enumerate}
+    \item assign relative importance to customer needs;
+    \item define measurable metrics and units for those needs;
+    \item evaluate candidate metrics using clear specification guidelines; and
+    \item build a basic benchmark of competing or reference products.
+\end{enumerate}
+
+\section{Key Terms}
+
+\begin{itemize}
+    \item \textbf{Need}: a user-centred requirement identified in Session 7.
+    \item \textbf{Metric}: a measurable quantity used to judge how well the product satisfies a need.
+    \item \textbf{Unit}: the measurement scale attached to a metric, such as L/min, mg/L, s, or RM.
+    \item \textbf{Benchmarking}: comparing your metrics with competing or reference products to understand realistic targets.
+\end{itemize}
+
+\section{Why Specifications Matter}
+
+Specifications connect customer language to engineering decisions. If a customer says that nutrient monitoring should be easier, the team must decide what can actually be measured: response time, display readability, sensor accuracy, or refill warning threshold. Without measurable specifications, concept selection becomes subjective and difficult to justify.
+
+\section{Activity 1: Prioritise Needs}
+
+Start by assigning an importance score to each major need from Session 7. Use a 1--5 scale where 1 means low importance and 5 means very high importance.
+
+When choosing the score, consider:
+\begin{itemize}
+    \item how frequently the need appeared in customer feedback;
+    \item how strongly it affects usability, safety, or performance; and
+    \item whether the need is central to the mission statement and target market.
+\end{itemize}
+
+\begin{table}[htbp]
+\centering
+\caption{Needs-importance table for the selected hydroponic product}
+\label{tab:session8-needs-importance}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{|c|>{\raggedright\arraybackslash}p{0.2\textwidth}|>{\raggedright\arraybackslash}X|c|>{\raggedright\arraybackslash}p{0.2\textwidth}|}
+\hline
+\textbf{No.} & \textbf{Sub-component} & \textbf{Need} & \textbf{Importance (1--5)} & \textbf{Reason for score} \\
+\hline
+1 & Nutrient reservoir & Nutrient level is easy to monitor & 5 & Strong impact on usability and maintenance \\
+\hline
+2 & Flow system & Nutrient flow remains stable & 5 & Directly affects plant health and system reliability \\
+\hline
+3 & Housing or frame & Product is easy to clean & 4 & Strong effect on maintenance effort \\
+\hline
+\end{tabularx}
+\end{table}
+
+\section{Activity 2: Define Candidate Metrics}
+
+% For each important need, propose one or more metrics that a product development team could measure directly. You may use an LLM to generate ideas, but treat the output as a draft only. Every metric must still be checked using engineering judgement, credible sources, and the logic of the project.
+Now, let's find the appropriate metrics for each of the customer needs. Due to time constraints, we will use the LLM (language learning model) to assist us. Remember, this course is not focused on prompt engineering or LLM, but we are using it here to save time. You might consider using the following prompt: \href{https://gist.github.com/balandongiv/b63414ea1f72e311bfdd2f1bdc5468dd}{click me}.
+
+
+The LLM may produce different results depending on the trial and which service (ChatGPT, Gemini, Claude, etc) you used. It is important for you to assess the accuracy and appropriateness of these results. Then, map the output in the Table 
+% \ref{table:bicycle_need_metric_unit_justification}
+ according to your evaluation.
+
+\input{session8/tab_bike_suspension_metrics.tex}
+\subsection{Metric Selection Guidelines}
+
+% A useful metric should:
+% \begin{itemize}
+%     \item reflect the customer need clearly;
+%     \item be measurable with a realistic method;
+%     \item leave enough design freedom rather than locking the team into one fixed solution;
+%     \item use appropriate units; and
+%     \item support later comparison with other products if possible.
+% \end{itemize}
+
+
+As I often remind you, do not fully trust everything that the LLM produces. According to the textbook, we should follow certain guidelines when creating product specifications. Therefore, please add a new column to your table and check if any suggestions meet the following criteria:
+\FloatBarrier
+\begin{enumerate}
+    \item Metrics that Reflect Customer Needs.
+    \item Dependent Metrics for Design Freedom
+    \item Practical Metrics for Product Development
+    \item Subjective Metrics for Subjective Needs
+    \item Metrics for Market Comparison
+\end{enumerate}
+\FloatBarrier
+Evaluate whether the response from the LLM fully or partially meets any of these guidelines. In the new column, mark the numbers 1, 2, 3, 4, or 5 to indicate which guideline(s) each suggestion aligns with
+
+
+Table~\ref{table:bicycle_need_metric_unit_justification} gives a recommended format.
+
+% \begin{table}[htbp]
+% \centering
+% \caption{Hydroponic example of needs, metrics, units, and justification}
+% \label{tab:session8-metric-definition}
+% \renewcommand{\arraystretch}{1.2}
+% \begin{tabularx}{\textwidth}{|c|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}p{0.22\textwidth}|>{\raggedright\arraybackslash}p{0.1\textwidth}|>{\raggedright\arraybackslash}X|}
+% \hline
+% \textbf{No.} & \textbf{Need} & \textbf{Metric} & \textbf{Unit} & \textbf{Justification} \\
+% \hline
+% 1 & Nutrient level is easy to monitor & Reservoir level reading error & mm & Directly measures how accurately the system reports remaining nutrient level. \\
+% \hline
+% 2 & Nutrient flow remains stable & Flow-rate variation during operation & L/min & Indicates whether the delivery system performs consistently. \\
+% \hline
+% 3 & Product is easy to clean & Average cleaning time for one maintenance cycle & min & Reflects maintenance burden experienced by the user. \\
+% \hline
+% \end{tabularx}
+% \end{table}
+
+\section{Activity 3: Evaluate Metrics Using Specification Guidelines}
+
+Each candidate metric should be checked against the five guideline categories below.
+
+\begin{enumerate}
+    \item \textbf{Metrics that reflect customer needs}: the metric measures something directly connected to the user's need.
+    \item \textbf{Dependent metrics for design freedom}: avoid too many tightly dependent metrics that overconstrain the design.
+    \item \textbf{Practical metrics for product development}: the metric can be measured, tested, or estimated realistically.
+    \item \textbf{Subjective metrics for subjective needs}: if the need is subjective, use an appropriate rating or user-based measure.
+    \item \textbf{Metrics for market comparison}: the metric is useful for comparing reference or competitor products.
+\end{enumerate}
+
+Add a guideline column to your metric table and note which of the five categories each candidate metric satisfies. If you use more than one category, list all relevant numbers or names.
+
+\section{Activity 4: Build the Need-Metric Matrix (Optional)}
+
+This is an optional task that you can choose to do at home. Next, using Microsoft Excel, you will need to rearrange the table from Activity 3 into a new format called a 'need-metric matrix'. Your matrix should look similar to the example provided in Table 
+% \ref{table: need to metric pair}
+
+
+
+\input{session8/need_metric_pair}
+
+OR another example,but for lecturer only
+\input{session8/tab_suspension_mapping_matrix.tex}
+
+
+
+\section{Activity 5: Collect Benchmarking Information}
+
+Benchmarking helps your group understand what performance levels already exist in the market. Use competitor datasheets, product listings, academic sources, or carefully verified online references where possible. If an LLM suggests values, treat them as unverified until you confirm them.
+
+\input{session8/comparison_suspension_metric_bicycle.tex}
+
+\section{Activity 6: Visualise and Interpret the Data (Optional)}
+
+If you choose to visualise the benchmark data, use bar charts, grouped bar charts, or radar charts to compare competing values. Excel, Python, or another charting tool is usually more reliable than direct LLM image generation.
+
+When interpreting a graph, ask:
+\begin{itemize}
+    \item Which metrics show the widest performance gap across products?
+    \item Where does your concept need to meet the market baseline, and where could it differentiate itself?
+    \item Do any metrics appear unrealistic or poorly supported by evidence?
+\end{itemize}
+
+\section{Summary and Next Steps}
+
+At the end of this session, your group should have a needs-importance table, a candidate metric table with units and justifications, and an initial benchmark or reference comparison. These outputs will guide functional decomposition and concept generation in the next sessions.
