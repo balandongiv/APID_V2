@@ -33,26 +33,34 @@ Functional decomposition is usually the strongest option when the product contai
 Before class, analyse the product individually and prepare a first draft of the functional structure.
 
 \subsection{Procedure}
+
 \begin{enumerate}
-    \item identify the product's overall function;
-    \item list the major sub-functions using verb--noun pairs;
-    \item choose one decomposition approach and justify it briefly;
-    \item sketch a function tree, block diagram, or structured list; and
-    \item write one short note explaining each major function.
+    \item Choose one of the following approaches for problem decomposition:
+    \begin{enumerate}
+        \item Functional decomposition
+        \item Decomposition by sequence of user actions
+        \item Decomposition by key customer needs
+    \end{enumerate}
+    Justify the selected approach and apply it to the chosen product.
+
+    \item Use suitable visual representations, such as function diagrams or flowcharts, to illustrate the decomposition process and the relationships among components or subfunctions.
+
+    \item State each functional element using a \textbf{verb--noun} structure. For example, for a nutrient delivery concept, a simple function list could include:
+    \begin{itemize}
+        \item Store Solution
+        \item Move Solution
+        \item Distribute Flow
+        \item Monitor Level
+        \item Simplify Cleaning
+    \end{itemize}
+
+    \item Provide a brief write-up explaining how each functional element works within the overall product system to improve clarity and understanding.
+
+    \item At this stage, the objective is to describe the product in terms of its functional elements only, without suggesting a specific technological principle for the concept.
+
+    \item Avoid fixing the functions to a single technical solution too early. The wording should remain sufficiently broad to allow multiple concept alternatives to be developed later.
 \end{enumerate}
 
-Avoid locking the functions to one technical solution too early. Keep the wording broad enough to support multiple concepts later.
-
-\subsection{Hydroponic Example}
-
-For a nutrient delivery concept, a simple function list might include:
-\begin{itemize}
-    \item store nutrient solution;
-    \item move nutrient solution;
-    \item distribute flow;
-    \item monitor liquid level; and
-    \item simplify cleaning.
-\end{itemize}
 
 \subsection{Decomposition Template}
 
@@ -82,6 +90,20 @@ Major sub-function 3 &  &  \\
 
 \section{Pre-Class Activity 2: Search for Solution Options}
 
+The objective of this activity is to walk you in executing comprehensive searches and gathering solutions for critical sub-problems related to the selected product and ultimately the finding may help you in generating concepts that ensure the product's smooth functionality.
+
+\textbf{Procedure:}
+\begin{enumerate}
+    \item To conduct an external search, you may consider sources such as academic publications, industry reports, technical journals, and relevant online platforms.
+    \begin{enumerate}
+        \item The combination between search engine and appropriate search keywords/phrases that are specific to each sub-problem may help in pinpointing/retrieving relevant information.
+    \end{enumerate}
+    \item Jot down and compile at least five different solutions for each critical sub-problem obtained from the external/internal search.
+    \begin{enumerate}
+        \item For the benefit of other reader (your team member, and module convener), it is strongly recommended to details, such as the source, author, publication date, and a brief description of each solution.
+    \end{enumerate}
+\end{enumerate}
+
 For each critical sub-function, identify at least five possible solutions from internal brainstorming or external research.
 
 \subsection{Solution Search Criteria}
@@ -95,23 +117,8 @@ When recording solutions, consider:
     \item source credibility.
 \end{itemize}
 
-\begin{table}[htbp]
-\centering
-\caption{Solution search template for critical sub-functions}
-\label{tab:session9-solution-template}
-\renewcommand{\arraystretch}{1.2}
-\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{0.18\textwidth}|>{\raggedright\arraybackslash}p{0.18\textwidth}|>{\raggedright\arraybackslash}p{0.18\textwidth}|X|>{\raggedright\arraybackslash}p{0.16\textwidth}|}
-\hline
-\textbf{Sub-function} & \textbf{Candidate solution} & \textbf{Source} & \textbf{Description} & \textbf{Feasibility notes} \\
-\hline
- &  &  &  &  \\
-\hline
- &  &  &  &  \\
-\hline
- &  &  &  &  \\
-\hline
-\end{tabularx}
-\end{table}
+Record your findings in the template shown in Table~\ref{tab:session9-solution-template}.
+\input{session9/tab_subfunction_solution_template.tex}
 
 \section{In-Class Activity 1: Agree on the Decomposition}
 
@@ -119,16 +126,21 @@ In class, compare the individual decompositions and agree on one shared structur
 
 \begin{enumerate}
     \item compare the different approaches proposed by team members;
-    \item choose the approach that best matches the product and justify the choice;
-    \item refine the function list so that the wording stays technology-agnostic; and
+    \item choose the approach that best matches the product and justify the choice (e.g., functional decomposition,decomposition by sequence of user actions, or decomposition by key customer needs);
+    \item refine the function list so that the wording stays technology-agnostic and come out with a flowchart figures as in Figure~ \ref{fig:planting_flowchart} or the flow as in Listing~\ref{lst:seedPlanter}; and
     \item identify which sub-functions are most critical for later concept generation.
 \end{enumerate}
 
+\input{session9/planting_flowchart.tex}
+% \input{session9/seed_planter_flow.tex}
 \section{In-Class Activity 2: Build the Requirement--Function Matrix}
 
-The requirement--function matrix checks whether the functions you identified are sufficient to satisfy the needs from Session 7 and the metrics from Session 8. If a major requirement is not supported by any function, the decomposition is incomplete.
+Once a comprehensive list of project functions has been identified, the next crucial step is to assess how well these functions align with customer needs. It is equally important to ensure that the number of functions is balanced — sufficient to cover all requirements without introducing unnecessary complexity.
 
-\input{session9/rfm_table_landscape}
+To systematically perform this evaluation, we develop a Requirement vs Function Matrix as shown in Table \ref{tab:req_matrix_table}. This matrix provides a clear and organized method for mapping each customer requirement to the corresponding functions intended to fulfill them. It serves as a visual "roadmap," illustrating the connection between what needs to be achieved and how it will be accomplished.
+
+\input{session9/rfm_table_landscape.tex}
+% \input{session9/rfm_table_landscape_hydroponic.tex}
 
 \section{In-Class Activity 3: Consolidate the Solution Search}
 

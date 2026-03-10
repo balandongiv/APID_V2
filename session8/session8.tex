@@ -2,7 +2,7 @@
 
 \section{Session Overview}
 
-In Session 7, your group translated customer statements into interpreted needs. This session turns those needs into \textbf{product specifications}: measurable targets that guide engineering decisions, benchmarking, and later concept evaluation.
+In Session~ \ref{sec:customer_needs}, your group translated customer statements into interpreted needs. This session turns those needs into \textbf{product specifications}: measurable targets that guide engineering decisions, benchmarking, and later concept evaluation.
 
 By the end of this session, you should be able to:
 \begin{enumerate}
@@ -15,7 +15,7 @@ By the end of this session, you should be able to:
 \section{Key Terms}
 
 \begin{itemize}
-    \item \textbf{Need}: a user-centred requirement identified in Session 7.
+    \item \textbf{Need}: a user-centred requirement identified in Session \ref{sec:customer_needs}.
     \item \textbf{Metric}: a measurable quantity used to judge how well the product satisfies a need.
     \item \textbf{Unit}: the measurement scale attached to a metric, such as L/min, mg/L, s, or RM.
     \item \textbf{Benchmarking}: comparing your metrics with competing or reference products to understand realistic targets.
@@ -27,7 +27,7 @@ Specifications connect customer language to engineering decisions. If a customer
 
 \section{Activity 1: Prioritise Needs}
 
-Start by assigning an importance score to each major need from Session 7. Use a 1--5 scale where 1 means low importance and 5 means very high importance.
+Start by assigning an importance score to each major need from Session \ref{sec:customer_needs}. Use a $1$--$5$ scale where 1 means low importance and 5 means very high importance.
 
 When choosing the score, consider:
 \begin{itemize}
@@ -142,11 +142,40 @@ OR another example,but for lecturer only
 
 Benchmarking helps your group understand what performance levels already exist in the market. Use competitor datasheets, product listings, academic sources, or carefully verified online references where possible. If an LLM suggests values, treat them as unverified until you confirm them.
 
-\input{session8/comparison_suspension_metric_bicycle.tex}
+Next, we will assess the metric values used by various competing companies. You may create a table similar to the following Table \ref{table:metric comparison} with columns representing each competitor's product. For this table, each row should correspond to a metric we identified earlier.
+
+
+
+
+Next, we will Input the metric values for each competitor's product in the respective columns. In actual product development process, these values should be extracted from competitors' catalogs and supporting literature. However, due to time constraints, we will once again use the Language Learning Model (LLM) to help us define the appropriate specifications for each customer need. It's important to remember that this class does not focus on prompt engineering or the mechanics of LLMs; however, we utilize this tool to efficiently manage our time.
+
+
+You might consider using the following prompt to engage the LLM: \href{https://gist.github.com/balandongiv/1c360c0ab5658f611c870ea06b4aabcc}{clickme}.  The LLM is expected to generate outputs in various formats depending on the trial and platform used. You must critically evaluate the accuracy and appropriateness of these outputs using your judgment, then document these metrics in the table as instructed.
+
+Need to enable the table comparison suspension metric bicycle
+% \input{session8/comparison_suspension_metric_bicycle.tex}
+
+\input{session8/tab_comparison_hydroponic.tex}
+
 
 \section{Activity 6: Visualise and Interpret the Data (Optional)}
 
-If you choose to visualise the benchmark data, use bar charts, grouped bar charts, or radar charts to compare competing values. Excel, Python, or another charting tool is usually more reliable than direct LLM image generation.
+
+For better visualization, we can represent these values using graphs. This helps us to clearly see the range of metric values across different competitive products. 
+
+You may consider the following prompt \href{https://gist.github.com/balandongiv/3f06a6bdbf30c20dbcfd6877a46c8373}{click me} to generate a bar chart to display the values adopted by various competitors for a specific metric. Alternatively, you can generate a grouped bar chart \href{https://gist.github.com/balandongiv/dc9635a4feaf42694f8f5054b10f13cf}{click me} to show the values adopted by various competitors across a range of metrics related to the product.
+If you are using the free version of ChatGPT, it might provide you with Python code instead of a direct graph. You can either:
+
+
+
+\begin{enumerate}
+    \item Ask a friend who has taken a computer programming class to run the code and share the results with you.
+    \item Use  \href{https://www.codabrainy.com/en/python-compiler/}{codabrainy} or \href{https://trinket.io/embed/python3}{} (trinke), which does not require any installation, to run the code yourself.
+\end{enumerate}
+
+This exercise is intended to help you understand how to visually compare different values used by competing products. Remember, the image created by the LLM might not always be accurate, so it is important to verify the output yourself. You can also use Microsoft Excel to create these graphs for more precise results.
+
+\subsection{What to Observe}
 
 When interpreting a graph, ask:
 \begin{itemize}

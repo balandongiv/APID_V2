@@ -1,22 +1,20 @@
-\begin{table}[htbp]
+% \begin{landscape}
+\begin{table}[H]
 \centering
-\scriptsize
-\caption{Example benchmark table for hydroponic monitoring metrics}
-\label{table:metric comparison}
-\renewcommand{\arraystretch}{1.2}
-\begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}p{0.24\textwidth}|c|c|c|c|}
+% \scriptsize
+\tiny
+\caption{Comparison of Suspension Metrics Across Bicycle Models}
+\label{tab:metric_comparison}
+\begin{tabular}{|P{1cm}|c|p{2cm}|P{0.5cm}|P{0.5cm}|P{1cm}|P{1cm}|P{1cm}|P{1cm}|P{1cm}|P{1cm}|}
 \hline
-\textbf{Metric} & \textbf{Concept A} & \textbf{Concept B} & \textbf{Concept C} & \textbf{Your target} \\
+\textbf{Metric No.} & \textbf{Need Nos.} & \textbf{Metric} & \textbf{Imp.} & \textbf{Units} 
+& \textbf{ST Tritrack} & \textbf{Maniray 2} & \textbf{Rox Talx Quadra} & \textbf{Rox Talx Ti 21} 
+& \textbf{Tonka Pro} & \textbf{Gunhill Head Shox} \\
 \hline
-Reservoir level reading error (mm) & 4 & 7 & 5 & 3 \\
+1 & 1, 3 & Attenuation from dropout to handlebar at 10 Hz & 3 & dB & 8 & 15 & 10 & 15 & 9 & 13 \\
 \hline
-Flow-rate variation (L/min) & 0.15 & 0.24 & 0.19 & 0.10 \\
+2 & 2, 6 & Spring preload & 3 & N & 550 & 760 & 500 & 710 & 480 & 680 \\
 \hline
-Average cleaning time (min) & 14 & 22 & 18 & 12 \\
-\hline
-Leakage rate during 24 h test (mL/h) & 5 & 12 & 8 & 3 \\
-\hline
-Alert response time (s) & 9 & 15 & 11 & 6 \\
-\hline
-\end{tabularx}
+\end{tabular}
 \end{table}
+% \end{landscape}
