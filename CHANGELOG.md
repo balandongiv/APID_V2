@@ -3,6 +3,7 @@
 ## Unreleased
 
 ### Changed
+- Inserted planned pedagogical `tcolorbox` blocks (Goal, Checkpoint, Common Mistakes, Hint) across Sessions 1--12 LaTeX files, aligned to the editorial box plan and moved to safe non-fragile insertion points where needed.
 - Refactored devcontainer setup to move create/start commands into scripts for easier debugging.
 - Added Yarn APT repository key setup to the devcontainer create script.
 
