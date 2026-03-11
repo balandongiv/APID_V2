@@ -12,6 +12,10 @@ By the end of this session, you should be able to:
     \item build a basic benchmark of competing or reference products.
 \end{enumerate}
 
+\begin{tcolorbox}[title=Goal]
+Today you will convert needs into measurable specifications. Assign importance to each need, define candidate metrics and units, evaluate metrics with the guideline categories, and collect benchmarking data.
+\end{tcolorbox}
+
 \section{Key Terms}
 
 \begin{itemize}
@@ -54,15 +58,22 @@ When choosing the score, consider:
 \end{tabularx}
 \end{table}
 
+\begin{tcolorbox}[title=Checkpoint]
+Complete a needs-importance table by assigning a 1--5 score to each need based on frequency, impact, and alignment with your mission. Record the reason for each score.
+\end{tcolorbox}
+
 \section{Activity 2: Define Candidate Metrics}
 
 % For each important need, propose one or more metrics that a product development team could measure directly. You may use an LLM to generate ideas, but treat the output as a draft only. Every metric must still be checked using engineering judgement, credible sources, and the logic of the project.
 Now, let's find the appropriate metrics for each of the customer needs. Due to time constraints, we will use the LLM (language learning model) to assist us. Remember, this course is not focused on prompt engineering or LLM, but we are using it here to save time. You might consider using the following prompt: \href{https://gist.github.com/balandongiv/b63414ea1f72e311bfdd2f1bdc5468dd}{click me}.
 
 
-The LLM may produce different results depending on the trial and which service (ChatGPT, Gemini, Claude, etc) you used. It is important for you to assess the accuracy and appropriateness of these results. Then, map the output in the Table 
-% \ref{table:bicycle_need_metric_unit_justification}
- according to your evaluation.
+The LLM may produce different results depending on the trial and which service (ChatGPT, Gemini, Claude, etc) you used. It is important for you to assess the accuracy and appropriateness of these results. Then, map the output in the Table % \ref{table:bicycle_need_metric_unit_justification}
+according to your evaluation.
+
+\begin{tcolorbox}[title=Common Mistakes]
+LLM suggestions are drafts only. Verify each proposed metric with engineering judgement, credible sources, and project logic. Avoid metrics that over-constrain the design or fail to reflect the underlying need.
+\end{tcolorbox}
 
 \input{session8/tab_bike_suspension_metrics.tex}
 \subsection{Metric Selection Guidelines}
@@ -88,6 +99,10 @@ As I often remind you, do not fully trust everything that the LLM produces. Acco
 \end{enumerate}
 \FloatBarrier
 Evaluate whether the response from the LLM fully or partially meets any of these guidelines. In the new column, mark the numbers 1, 2, 3, 4, or 5 to indicate which guideline(s) each suggestion aligns with
+
+\begin{tcolorbox}[title=Hint]
+For each candidate metric, explicitly indicate which guideline numbers it satisfies. Whenever possible, choose metrics that satisfy multiple guideline categories.
+\end{tcolorbox}
 
 
 Table~\ref{table:bicycle_need_metric_unit_justification} gives a recommended format.
@@ -124,6 +139,10 @@ Each candidate metric should be checked against the five guideline categories be
 
 Add a guideline column to your metric table and note which of the five categories each candidate metric satisfies. If you use more than one category, list all relevant numbers or names.
 
+\begin{tcolorbox}[title=Checkpoint]
+Ensure your metric table lists each need, proposed metric(s), unit(s), justification, and the guideline numbers satisfied. These columns are required to build a robust need-metric matrix.
+\end{tcolorbox}
+
 \section{Activity 4: Build the Need-Metric Matrix (Optional)}
 
 This is an optional task that you can choose to do at home. Next, using Microsoft Excel, you will need to rearrange the table from Activity 3 into a new format called a 'need-metric matrix'. Your matrix should look similar to the example provided in Table 
@@ -157,6 +176,9 @@ Need to enable the table comparison suspension metric bicycle
 
 \input{session8/tab_comparison_hydroponic.tex}
 
+\begin{tcolorbox}[title=Checkpoint]
+Collect at least one competitor or reference data point for each key metric. Record the source and justify relevance; if no competitor data exists, explain how you estimated an initial target.
+\end{tcolorbox}
 
 \section{Activity 6: Visualise and Interpret the Data (Optional)}
 
